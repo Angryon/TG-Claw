@@ -231,6 +231,87 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/depsec/science
 	name = "science_sec"
 
+// FO13 Faction Start. Set to override for the time being to allow latejoining in their original spots.
+
+// Legion
+/obj/effect/landmark/start/legrecruit
+	name = "Legionnaire Recruit"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/legvexillarius
+	name = "Legion Vexillarius"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/legdecanus
+	name = "Legion Decanus"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/legcenturion
+	name = "Legion Centurion"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+// NCR
+
+/obj/effect/landmark/start/ncrtrooper
+	name = "NCR Trooper"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/ncrsergeant
+	name = "NCR Sergeant"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/ncrcaptain
+	name = "NCR Captain"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/ncrscoutranger
+	name = "NCR Scout Ranger"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+// Brotherhood of Steel
+
+/obj/effect/landmark/start/bosinitiate
+	name = "BOS Initiate"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/bosscribe
+	name = "BOS Scribe"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/bosknight
+	name = "BOS Knight"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+	
+/obj/effect/landmark/start/bospaladin
+	name = "BOS Paladin"
+	icon_state = "Assistant"
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+
+//Antag start
+
 /obj/effect/landmark/start/wizard
 	name = "wizard"
 	icon = 'icons/effects/landmarks_static.dmi'
