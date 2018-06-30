@@ -142,6 +142,73 @@
 	// min dmg 3, max dmg 6, prob(70)
 	AddComponent(/datum/component/caltrop, 3, 6, 70)
 
+// Wasteland plants
+
+/obj/structure/flora/ash/broc
+	icon_state = "broc"
+	name = "broc flowers"
+	desc = "A bunch of broc flowers on a stem, ripe for the picking."
+	harvested_name = "picked broc flowers"
+	harvested_desc = "The stem of a broc flower plant, regrettably already picked over."
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/broc
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 24
+	harvest_message_low = "You pick off a single, suitable flower."
+	harvest_message_med = "You pick off a couple broc flowers."
+	harvest_message_high = "You pick a few broc flowers off the stem."
+	regrowth_time_low = 4800
+	regrowth_time_high = 7200
+
+/obj/structure/flora/ash/xander
+	icon_state = "xander"
+	name = "xander root"
+	desc = "A xander root cropping up from the soil, ripe for the picking."
+	harvested_name = "xander remains"
+	harvested_desc = "The hole and bits left from an upended xander root."
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/xander
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 1
+	harvest_time = 40
+	harvest_message_low = "You pluck the xander root out of the ground."
+	harvest_message_med = "You pluck the xander root out of the ground." //shouldn't show up, because you can't get more than one
+	harvest_message_high = "You pluck the xander root out of the ground."
+	regrowth_time_low = 2800
+	regrowth_time_high = 4000
+
+/obj/structure/flora/ash/mutfruit
+	icon_state = "mutfruit"
+	name = "mutfruit stalk"
+	desc = "A mutfruit stem with several plump, fully grown mutfruit hanging from the branches.."
+	harvested_name = "picked mutfruit"
+	harvested_desc = "A mutfruit stem with quickly growing fruit hanging from it's branches."
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mutfruit
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 4
+	harvest_time = 20
+	harvest_message_low = "You pick a mutfruit."
+	harvest_message_med = "You pick a few mutfruit."
+	harvest_message_high = "You pick a bunch of mutfruit from the stem."
+	regrowth_time_low = 1800
+	regrowth_time_high = 3800
+
+/obj/structure/flora/ash/cavefungus
+	icon_state = "fungus"
+	name = "some cave fungus"
+	desc = "Some red cave fungus, ripe for the picking. They glow slightly in the darkness."
+	light_range = 1
+	harvested_name = "picked cave fungus"
+	harvested_desc = "A bunch of small stems of cave fungi growing slowly. They glow slightly in the darkness."
+	harvest = /obj/item/reagent_containers/food/snacks/grown/ash_flora/cave_fungus
+	needs_sharp_harvest = FALSE
+	harvest_amount_high = 5
+	harvest_time = 24
+	harvest_message_low = "You pluck a single fully-grown mushroom out of the ground."
+	harvest_message_med = "You pick a few mushrooms."
+	harvest_message_high = "You pick several mushrooms out of the ground."
+	regrowth_time_low = 4800
+	regrowth_time_high = 7200
+
 /obj/item/reagent_containers/food/snacks/grown/ash_flora
 	name = "mushroom shavings"
 	desc = "Some shavings from a tall mushroom. With enough, might serve as a bowl."
@@ -185,12 +252,42 @@
 	light_range = 1
 	seed = /obj/item/seeds/lavaland/ember
 
+// wasteland fruit
+
 /obj/item/reagent_containers/food/snacks/grown/ash_flora/cactus_fruit
 	name = "cactus fruit"
-	list_reagents = list("vitamin" = 2, "nutriment" = 2, "vitfro" = 4)
-	desc = "A cactus fruit covered in a thick, reddish skin. And some ash."
+	list_reagents = list("vitamin" = 0.1, "nutriment" = 2, "water" = 10)
+	desc = "A barrel cactus fruit, juicy and ripe."
 	icon_state = "cactus_fruit"
 	seed = /obj/item/seeds/lavaland/cactus
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/broc
+	name = "broc flower"
+	list_reagents = list("vitamin" = 1, "vitfro" = 1)
+	desc = "A broc flower, often used in creating healing mixtures."
+	icon_state = "broc_flower"
+	seed = /obj/item/seeds/lavaland/broc
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/xander
+	name = "xander root"
+	list_reagents = list("vitamin" = 2, "nutriment" = 2, "vitfro" = 4)
+	desc = "A xander root, a large turnip-like root with mild healing properties."
+	icon_state = "xander_root"
+	seed = /obj/item/seeds/lavaland/xander
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/mutfruit
+	name = "mutfruit"
+	list_reagents = list("vitamin" = 0.2, "nutriment" = 0.3, "uranium" = 0.1)
+	desc = "A mutfruit, a small purple fruit which contains trace amounts of radiation."
+	icon_state = "mutfruit"
+	seed = /obj/item/seeds/lavaland/mutfruit
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/cave_fungus
+	name = "cave fungus"
+	list_reagents = list("nutriment" = 0.1, "potass_iodide" = 1)
+	desc = "A bunch of cave fungus, mushrooms often known for treating radiation sickness."
+	icon_state = "cave_fungus"
+	seed = /obj/item/seeds/lavaland/cave_fungus
 
 /obj/item/reagent_containers/glass/bowl/mushroom_bowl
 	name = "mushroom bowl"

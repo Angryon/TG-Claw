@@ -164,6 +164,73 @@
 	icon_state = "seed-cactus"
 	species = "cactus"
 	plantname = "Fruiting Cactus"
+	genes = list(/datum/plant_gene/trait/plant_type/weed_hardy)
 	product = /obj/item/reagent_containers/food/snacks/grown/ash_flora/cactus_fruit
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
 	growthstages = 2
+	lifespan = 90
+	endurance = 80
+	production = 8
+	yield = 4
+
+// wasteland fruits
+
+/obj/item/seeds/lavaland/broc
+	name = "pack of broc seeds"
+	desc = "These seeds grow into a broc flower stem."
+	icon_state = "seed-broc"
+	species = "broc"
+	plantname = "Broc Flower"
+	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy)
+	product = /obj/item/reagent_containers/food/snacks/grown/ash_flora/broc
+	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
+	growthstages = 4
+	lifespan = 90
+	endurance = 80
+	production = 8
+	yield = 6
+
+/obj/item/seeds/lavaland/xander
+	name = "pack of xander seeds"
+	desc = "These seeds grow into a xander root."
+	icon_state = "seed-xander"
+	species = "xander"
+	plantname = "Xander Root"
+	genes = list(/datum/plant_gene/trait/plant_type/weed_hardy)
+	product = /obj/item/reagent_containers/food/snacks/grown/ash_flora/xander
+	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
+	growthstages = 2
+	lifespan = 120
+	endurance = 80
+	yield = 1
+	production = 10
+
+/obj/item/seeds/lavaland/mutfruit
+	name = "pack of mutfruit seeds"
+	desc = "These seeds grow into a mutfruit plant."
+	icon_state = "seed-mutfruit"
+	species = "mutfruit"
+	plantname = "Mutfruit"
+	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy)
+	product = /obj/item/reagent_containers/food/snacks/grown/ash_flora/mutfruit
+	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
+	growthstages = 4
+	endurance = 80
+	production = 5
+	maturation = 5
+	yield = 3
+
+/obj/item/seeds/lavaland/cave_fungus
+	name = "pack of cave fungus seeds"
+	desc = "These seeds grow into cave fungi."
+	icon_state = "seed-cavefungus"
+	species = "cavefungus"
+	plantname = "Cave Fungus"
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism, /datum/plant_gene/trait/plant_type/weed_hardy)
+	product = /obj/item/reagent_containers/food/snacks/grown/ash_flora/cave_fungus
+	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
+	growthstages = 4
+	endurance = 80
+	production = 5
+	maturation = 5
+	yield = 3
